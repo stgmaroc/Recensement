@@ -53,7 +53,7 @@ public class ListActivity extends AppCompatActivity {
     //Context contextApp = getApplicationContext();
     //SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(contextApp);
 
-    public static final String base_url_list = "http://192.168.1.90:8000/api/";
+    public static final String base_url_list = "http://154.70.200.106:9009/api/";
 
     public static String contains = "";
 
@@ -162,8 +162,8 @@ public class ListActivity extends AppCompatActivity {
 
         //String token=loadToken();
 
-        //Call<ArrayList<Respond>> call = client.getlist("bearer "+loadToken());
-        Call<ArrayList<Respond>> call = client.getlist(token);
+        Call<ArrayList<Respond>> call = client.getlist("bearer "+loadToken());
+        //Call<ArrayList<Respond>> call = client.getlist(token);
 
         call.enqueue(new Callback<ArrayList<Respond>>() {
             @Override

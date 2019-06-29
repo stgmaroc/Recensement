@@ -66,7 +66,7 @@ public class Pointer extends AppCompatActivity implements NavigationView.OnNavig
 
     ArrayList<PointageListModel> results = new ArrayList<PointageListModel>();
 
-    public static final String base_url_list = "http://192.168.1.90:8000/api/";
+    public static final String base_url_list = "http://154.70.200.106:9009/api/";
     public static final String base_url_pointage_list = "http://192.168.1.90:8000/api/pointage/";
 
     Gson gson= new GsonBuilder().setLenient().create();
@@ -75,9 +75,6 @@ public class Pointer extends AppCompatActivity implements NavigationView.OnNavig
     final Userclient client= retrofit.create(Userclient.class);
 
     LocationManager locationManager;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

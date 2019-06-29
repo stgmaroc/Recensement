@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     private TokenStorage tokenStorage;
 
     //public static final String base_url = "http://154.70.200.106:8005/api/login.php/";
-    public static final String base_url = "http://192.168.1.90:8000/api/";
+    public static final String base_url = "http://154.70.200.106:9009/api/";
 
     public static final String filename = "token";
 

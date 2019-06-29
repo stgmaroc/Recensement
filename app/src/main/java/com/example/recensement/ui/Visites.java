@@ -79,7 +79,7 @@ public class Visites extends AppCompatActivity {
 
     private int client_id;
 
-    public static final String base_url = "http://192.168.1.90:8000/api/";
+    public static final String base_url = "http://154.70.200.106:9009/api/";
 
     private static final String[] PROJECTION = new String[]{MediaStore.MediaColumns.DATA};
     private static final ContentValues CONTENT_VALUES = new ContentValues(1);
@@ -104,6 +104,8 @@ public class Visites extends AppCompatActivity {
         setContentView(R.layout.activity_visites);
         getSupportActionBar().setElevation(0);
 
+        final ProgressBar progressBar=findViewById(R.id.pBar);
+
         Button btnCamera = findViewById(R.id.pictures);
         imageView = findViewById(R.id.image);
         clients = findViewById(R.id.clients);
@@ -116,6 +118,7 @@ public class Visites extends AppCompatActivity {
                 MultipartBody.Part file = MultipartBody.Part.createFormData("photo",photoFile.getName(),requestBody);
                 //int client_id=clients.getId();
                 //Toast.makeText(Visites.this,client_id+"test",Toast.LENGTH_SHORT).show();
+                progressBar.setVisibility(View.VISIBLE);
 
                 VisitModel visitModel= new VisitModel(file,client_id);
 
@@ -123,6 +126,7 @@ public class Visites extends AppCompatActivity {
                 call.enqueue(new Callback<VisitRespond>() {
                     @Override
                     public void onResponse(Call<VisitRespond> call, Response<VisitRespond> response) {
+                        progressBar.setVisibility(View.GONE);
                         //Toast.makeText(Visites.this,response.raw().code()+"test",Toast.LENGTH_SHORT).show();
                         if (response.raw().code() == 200){
                             Toast.makeText(Visites.this,"Visite enregistrée",Toast.LENGTH_SHORT).show();
@@ -135,6 +139,7 @@ public class Visites extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<VisitRespond> call, Throwable t) {
+                        progressBar.setVisibility(View.GONE);
                         Toast.makeText(Visites.this,t.getMessage(),Toast.LENGTH_SHORT).show();
                         //progressBar.setVisibility(View.GONE);
                     }
@@ -289,7 +294,7 @@ public class Visites extends AppCompatActivity {
         Call<ArrayList<FetchClients>> call = client.getlistClients("bearer "+loadToken());
         final ProgressBar progressBar;
         progressBar=findViewById(R.id.pBar);
-
+        //progressBar.setVisibility(View.VISIBLE);
 
         call.enqueue(new Callback<ArrayList<FetchClients>>() {
             @Override

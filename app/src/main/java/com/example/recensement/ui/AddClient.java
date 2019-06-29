@@ -46,7 +46,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class AddClient extends AppCompatActivity {
 
     private String Jwt;
-    public static final String base_url = "http://192.168.1.90:8000/api/";
+    public static final String base_url = "http://154.70.200.106:9009/api/";
 
     private EditText fname;
     private EditText lname;
