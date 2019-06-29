@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_marginBottom="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_date"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="Nom "
+                    android:textAlignment="textStart"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#08b0c1"
+                    android:textSize="14sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:text="Status "
+                    android:textAlignment="textEnd"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/big_tile"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

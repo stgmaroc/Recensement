@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recensement</string>
+    <string name="open_nav">open nav</string>
+    <string name="close_nav">close nav</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyAhlkla3XJZngc8wyata9XSv8JNaOtKl2M</string>
+    <string name="title_activity_sav">activity_sav</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pointer"
+            android:icon="@drawable/ic_fingerprint"
+            android:title="Poiteuse"></item>
+        <item
+            android:id="@+id/list_client"
+            android:icon="@drawable/list"
+            android:title="Liste Clients"></item>
+        <item
+            android:id="@+id/add_client"
+            android:icon="@drawable/add_client"
+            android:title="Ajouter Client"></item>
+        <item
+            android:id="@+id/add_sav"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Demande SAV"></item>
+        <item
+            android:id="@+id/add_visite"
+            android:icon="@drawable/ic_gps_fixed_black_24dp"
+            android:title="Visite"></item>
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/ic_logout"
+            android:title="Déconnection"></item>
+
+
+    </group>
+</menu>

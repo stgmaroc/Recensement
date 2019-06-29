@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ListActivity">
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="150dp"
+        android:visibility="visible"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:context=".ui.AddClient">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Demande SAV"
+                android:textColor="@color/big_tile"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/models"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/spinner_form_shape"
+                android:ems="10"
+                android:hint="Produit"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/spinner_form_shape"
+                android:ems="10"
+                android:hint="Ville"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text=""  />
+
+            <Spinner
+                android:id="@+id/sav_centre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/spinner_form_shape"
+                android:ems="10"
+                android:hint="Envoyé au centre ..."
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/imei"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="IMEI"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="Nom complet"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="téléphone"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="0321654978" />
+
+            <EditText
+                android:id="@+id/issue_description"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="description du probleme"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+
+            <EditText
+                android:id="@+id/product_receive_at"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="Date de reçu"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/add_issue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Ajouter"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

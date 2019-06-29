@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Ribbit.TitleTextStyle</item>
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+
+    </style>
+</resources>

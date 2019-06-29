@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ListActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:context=".ui.AddClient">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Demande SAV"
+                android:textColor="@color/big_tile"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/models"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="Produit"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="IMEI"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="Nom complet"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="téléphone"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="0321654978" />
+
+            <EditText
+                android:id="@+id/store"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="description du probleme"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <AutoCompleteTextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:paddingLeft="15dp"
+                android:hint="Ville" />
+
+            <EditText
+                android:id="@+id/reception_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="Date de reçu"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/sav_center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/form_shape"
+                android:ems="10"
+                android:hint="Envoyé au centre ..."
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/add_client_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Ajouter" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
